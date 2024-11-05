@@ -1,0 +1,76 @@
+Here’s a step-by-step guide you can include on GitHub for setting up and installing C++ in Visual Studio Code (VS Code):
+
+---
+
+# 🚀 Setting Up C++ in Visual Studio Code (VS Code)
+
+This guide walks you through the setup process to start coding in C++ with VS Code.
+
+---
+
+## 🛠️ Prerequisites
+
+1. **Visual Studio Code** – Download and install from [here](https://code.visualstudio.com/).
+2. **C++ Compiler (GCC)** – For Windows, install **MinGW**; for MacOS, use **Xcode Command Line Tools**; for Linux, use `g++`.
+
+---
+
+## 📝 Installation Steps
+
+### 1. Install the C++ Compiler
+- **Windows:** 
+   - Download **MinGW** from [mingw-w64.org](https://www.mingw-w64.org/) and follow the installer.
+   - Add the MinGW `bin` folder to your system’s PATH for easy command line access.
+
+- **MacOS:** 
+   - Run `xcode-select --install` in your terminal to install Xcode Command Line Tools.
+   
+- **Linux:** 
+   - Install using your package manager: `sudo apt update && sudo apt install g++`.
+
+### 2. Verify the C++ Compiler
+- Open a terminal and type:
+  ```bash
+  g++ --version
+  ```
+- You should see the version details if everything is set up correctly.
+
+### 3. Install C++ Extensions in VS Code
+- Open **VS Code**, go to **Extensions** (or press `Ctrl+Shift+X`).
+- Search for and install the following:
+   - **C/C++** (by Microsoft) – Provides syntax highlighting and IntelliSense.
+   - **Code Runner** (optional) – Allows you to run code easily.
+
+### 4. Configure C++ in VS Code
+- **Set Up Tasks**:
+   - Go to **Terminal > Configure Default Build Task > C++ g++ build active file** to set the build command.
+
+- **Launch Configurations** (for debugging):
+   - Go to **Run > Add Configuration** and select **C++ (GDB/LLDB)** to set up debugging.
+
+### 5. Write and Run a C++ Program
+- Create a new file with a `.cpp` extension.
+- Write a sample C++ program:
+  ```cpp
+  #include <iostream>
+  int main() {
+      std::cout << "Hello, World!" << std::endl;
+      return 0;
+  }
+  ```
+- **Build & Run**:
+   - Press `Ctrl+Shift+B` to build.
+   - Run the executable from the terminal, or use **Code Runner** by right-clicking and selecting **Run Code**.
+
+---
+
+## 🔄 Quick Commands
+
+- **Build**: `Ctrl+Shift+B`
+- **Run**: Use **Code Runner** or execute the output file in the terminal.
+
+---
+
+### 🎉 You’re all set!
+
+This setup allows you to start coding in C++ with ease in VS Code. For troubleshooting or further customization, explore the **C/C++ extension** documentation in VS Code.
